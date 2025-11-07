@@ -15,7 +15,7 @@
     }
 
     & .card p {
-        margin-top: .25rem;
+        margin-top: 0.25rem;
     }
 
     & zin-pricing {
@@ -30,13 +30,16 @@
     }
 
     & .btn {
-        width: 100%;
+        width: auto;
     }
 
     & .separator {
         height: 1px;
         margin-block: 2rem;
-        background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+        background: radial-gradient(
+            var(--text-color-secondary), 
+            var(--surface-color) 70%
+        );
     }
 
     & li {
@@ -57,13 +60,12 @@
 
         & .card {
             padding-top: 4.25rem;
-
             & > span {
                 position: absolute;
                 top: 0;
                 left: 0;
 
-                padding: .75rem 2rem;
+                padding: 0.75rem 2rem;
                 background: linear-gradient(
                     90deg,
                     var(--brand-color-secondary) 0%,
@@ -82,7 +84,7 @@
 
         padding: 2px;
 
-        &&::before {
+        &::before {
             content: "";
             background: linear-gradient(
                 90deg,
@@ -93,11 +95,10 @@
             inset: 0;
             border-radius: 1.5rem;
             z-index: -1;
-        }
-        
+        }  
     }
 
-    @media (min-width: 80rem) {
+    @media (width >= 80em) {
         --fs-price: 2.5rem;
 
         & header {
@@ -110,12 +111,12 @@
         }
 
         .btn-md{
-            padding: .75rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             font-size: var(--fs-base);
         }
 
         & .card:nth-child(3) .separator {
-            margin-block: 1.5 rem;
+            margin-block: 1.5rem;
         }
     }
 }

@@ -9,7 +9,7 @@
     justify-content: center;
     width: fit-content;
 
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
 
     cursor: pointer;
@@ -32,16 +32,16 @@
 }
 
 .btn-sm {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: var(--fs-sm);
 }
 
-.btn-md{
-    padding: .75rem 1.5rem;
+.btn-md {
+    padding: 0.75rem 1.5rem;
     font-size: var(--fs-base);
 }
 
-.btn-lg{
+.btn-lg {
     padding: 1rem 2rem;
     font-size: 1.125rem;
 }
@@ -53,10 +53,10 @@
         content: "";
         position: absolute;
         border-radius: inherit;
-        inset: 0.09375rem;
+        inset: 1px;
         background-color:var(--bg-color);
-
     }
+
     &::after {
         content: attr(aria-label);
         background: var(--btn-bg-color);
@@ -70,12 +70,12 @@
 
 @media (width >= 80em) {
 
-    .btn-sm{
-        padding: .75rem 1.5rem;
+    .btn-sm {
+        padding: 0.75rem 1.5rem;
         font-size: var(--fs-base);
     }
 
-    .btn-md{
+    .btn-md {
         padding: 1rem 2rem;
         font-size: 1.125rem;
     }

@@ -1,5 +1,5 @@
-::before,
-::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -33,11 +33,11 @@
     --fs-xl: 1.5rem;
     --fs-2xl: 2.5rem;
 
-    --px-lg: 1.5rem;
     --py-base: 1rem;
     --py-lg: 1.5rem;
     --py-xl: 3rem;
 
+    --px-lg: 1.5rem;
 
 }
 
@@ -62,7 +62,7 @@ h1, h2, h3 {
     line-height: 1.2;
     color: var(--text-color-primary);
     font-weight: var(--fw-bold);
-    letter-spacing: -0.04em;
+    letter-spacing: -0.04rem;
 }
 
 h1 {
@@ -82,7 +82,7 @@ a {
     color: inherit;
  }
 
- a:hover {
+a:hover {
     background: linear-gradient(
         90deg, 
         var(--brand-color-secondary) 0%, 
@@ -92,11 +92,11 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
- }
+}
 
- ul [role="list"] {
+ul[role="list"] {
     list-style: none;
- }
+}
 
 img {
     max-width: 100%;   
@@ -112,6 +112,7 @@ img {
         --py-base: 1.5rem;
         --py-lg: 2.5rem;
         --py-xl: 5rem;
+        
         --px-lg: 2rem;
     }
 }
